@@ -1,20 +1,46 @@
-<<<<<<< HEAD
-# React + Vite
+# 📚 Mini Kitaplık
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React + Vite kullanılarak geliştirilen bu proje, kitapları listelemenize, aramanıza ve favorilerinize eklemenize olanak tanıyan basit bir kitaplık uygulamasıdır. Veriler tarayıcının `localStorage` özelliğinde saklanır.
 
-Currently, two official plugins are available:
+## 🌐 Canlı Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Projenin canlı demosuna buradan ulaşabilirsiniz:
+[**https://mini-kitaplik-swart.vercel.app/**](https://mini-kitaplik-swart.vercel.app/)
 
-## React Compiler
+![Mini Kitaplık Ekran Görüntüsü](httpsGÖRSEL_LİNKİ_BURAYA_GELECEK)
+*(İpucu: Projenizin ekran görüntüsünü alıp, onu GitHub reponuza yükleyebilir ve linkini buraya yapıştırabilirsiniz.)*
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Özellikler
 
-## Expanding the ESLint configuration
+- Kitap listesinde başlığa veya yazara göre arama yapma
+- Kategoriye göre filtreleme (Tümü, Web, CS, Tasarım vb.)
+- Kitapları favorilere ekleme ve favorilerden çıkarma
+- Favori durumunun tarayıcıda (localStorage) saklanması
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# mini-kitaplik
->>>>>>> f7d137a7123492d662658a813e99ec47ba21b2df
+## 🚀 Kullanılan Teknolojiler
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- JavaScript (ES6+)
+- Modern CSS
+
+## 🖥️ Projeyi Lokalde Çalıştırma
+
+Projeyi kendi bilgisayarınızda denemek için:
+
+1.  Depoyu klonlayın:
+    ```bash
+    git clone [https://github.com/enesmidesem/mini-kitaplik.git](https://github.com/enesmidesem/mini-kitaplik.git)
+    ```
+2.  Proje dizinine gidin:
+    ```bash
+    cd mini-kitaplik
+    ```
+3.  Gerekli paketleri yükleyin:
+    ```bash
+    npm install
+    ```
+4.  Projeyi geliştirme modunda başlatın:
+    ```bash
+    npm run dev
+    ```
