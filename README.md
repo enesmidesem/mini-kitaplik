@@ -18,7 +18,7 @@ Projenin canlı demosuna buradan ulaşabilirsiniz:
 
 ## 🚀 Kullanılan Teknolojiler
 
-- [React](https://reactjs.org/)
-- [Vite](https://vitejs.dev/)
+- React
+- Vite
 - JavaScript 
 - CSS
