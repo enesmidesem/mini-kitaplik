@@ -1,0 +1,194 @@
+/* Genel görünüm */
+body {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #222;
+  margin: 0;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Uygulama ana kapsayıcı */
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* Sol taraf: kitaplar */
+.kitaplar {
+  flex: 2;
+  min-width: 300px;
+}
+
+/* Sağ taraf: favoriler paneli */
+.favoriler-paneli {
+  flex: 1;
+  min-width: 250px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Başlık */
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  color: #111;
+}
+
+/* Filtre alanı */
+.filtreler {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+/* Arama çubuğu */
+.filtreler input {
+  flex: 1;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  background-color: #fff;
+  color: #111;
+}
+
+.filtreler input::placeholder {
+  color: #888;
+}
+
+/* Kategori seçici */
+.filtreler select {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #111;
+}
+
+/* Kitap kartı */
+.kitap-karti {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.2s ease;
+}
+
+.kitap-karti:hover {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.07);
+}
+
+/* Kitap bilgisi */
+.kitap-bilgi {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.kitap-bilgi strong {
+  color: #000;
+  font-size: 1rem;
+}
+
+.kitap-bilgi small {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Butonlar */
+button {
+  background-color: #ffffff;
+  border: 1px solid #bbb;
+  color: #111;
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #f0f0f0;
+}
+
+button.favoride {
+  background-color: #ffe699;
+  border-color: #e0c450;
+  font-weight: 600;
+  color: #000;
+}
+
+/* Favoriler paneli */
+.favoriler-paneli h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #111;
+}
+
+.favoriler-paneli ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+  margin-top: 0.8rem;
+}
+
+.favoriler-paneli li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.favoriler-paneli button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #111;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+}
+
+.favoriler-paneli button:hover {
+  background-color: #f2f2f2;
+}
+
+/* Responsive yapı */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  .app {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .favoriler-paneli {
+    width: 100%;
+  }
+
+  .filtreler {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .filtreler select,
+  .filtreler input {
+    width: 100%;
+  }
+}
